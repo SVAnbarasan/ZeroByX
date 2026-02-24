@@ -1,0 +1,175 @@
+/* Message styling */
+.message {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 85%;
+}
+
+.user-message {
+  background-color: #2d3748;
+  margin-left: auto;
+}
+
+.assistant-message {
+  background-color: #1a202c;
+  margin-right: auto;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: #a0aec0;
+}
+
+.message-role {
+  font-weight: 600;
+}
+
+.message-timestamp {
+  opacity: 0.7;
+}
+
+.message-content {
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* Section headers */
+.section-header {
+  color: #e0e0e0;
+  margin: 1.5rem 0 1rem 0;
+  font-weight: 600;
+  border-bottom: 1px solid #4a5568;
+  padding-bottom: 0.5rem;
+}
+
+h1.section-header { font-size: 1.5rem; }
+h2.section-header { font-size: 1.25rem; }
+h3.section-header { font-size: 1.1rem; }
+
+/* Numbered items */
+.numbered-item {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.numbered-item .number {
+  position: absolute;
+  left: 0;
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+/* Bullet points */
+.bullet-item {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.bullet-item .bullet {
+  position: absolute;
+  left: 0;
+  color: #4CAF50;
+}
+
+/* Tables */
+.table-row {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: #2d3748;
+  border-radius: 4px;
+}
+
+/* Code blocks */
+.code-block {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 1rem;
+  border-radius: 6px;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  margin: 1rem 0;
+  overflow-x: auto;
+  border: 1px solid #333;
+}
+
+.code-block.bash {
+  border-left: 4px solid #4CAF50;
+}
+
+.code-block.python {
+  border-left: 4px solid #2196F3;
+}
+
+/* Bold text */
+strong {
+  color: #e0e0e0;
+  font-weight: 600;
+  background-color: rgba(76, 175, 80, 0.1);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+}
+
+/* Add syntax highlighting colors */
+.code-block .keyword { color: #569CD6; }
+.code-block .string { color: #CE9178; }
+.code-block .comment { color: #6A9955; }
+.code-block .function { color: #DCDCAA; }
+.code-block .number { color: #B5CEA8; }
+.code-block .operator { color: #D4D4D4; }
+
+.message-content strong {
+  color: #e0e0e0;
+  font-weight: 600;
+}
+
+.message-content pre {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #1e1e1e;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.message-content pre.code-block {
+  border: 1px solid #333;
+}
+
+.message-content pre.code-block.bash {
+  border-left: 4px solid #4CAF50;
+}
+
+.message-content pre.code-block.python {
+  border-left: 4px solid #2196F3;
+}
+
+.message-content li {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.message-content li::before {
+  content: "•";
+  color: #4CAF50;
+  position: absolute;
+  left: 0;
+}
+
+/* List styling */
+li {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+li::before {
+  content: "•";
+  color: #4CAF50;
+  position: absolute;
+  left: 0;
+} 
